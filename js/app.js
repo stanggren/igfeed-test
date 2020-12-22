@@ -12,7 +12,7 @@
 // })
 
 const token = 'IGQVJYN29uRmsxZAzJ3Uk15ZAFdtTGI3dnpIckpLc0JpRWI3RDdEZAlk4M014WlFWWUNnT3dlUHkycTlYbFBRRVFIV1lFQjRhRDR5RDdGUDVXU0t5eUVlTkJzUEY0OHB5MHpIemhFNG5ZAWFk4d21PaHllegZDZD';
-
+const michaToken = 'IGQVJWVmg0VjlGUWNhd0hmNUdDNGd4LUhfRWdsX3BBRl8talUwRWFhWFVUYWRlUGdlZA182V2ViLUthczJUdGxOSXVhZA3ptVjd6NWpfWE9IWVZA1cUxkNjIydUlmTFJ3bk5fNUtjZAUpQbWVkRHE3LW1VSUlxQmV2cnVJT2pr';
 async function fetchData(u) {
     try {
         const url = u
@@ -29,7 +29,7 @@ async function fetchData(u) {
 async function getPosts(d){
     for (let i = 0; i < 9; i++){
         try {
-            const url = `https://graph.instagram.com/${d[i].id}?fields=id,media_type,media_url,permalink,username,timestamp&access_token=${token}`
+            const url = `https://graph.instagram.com/${d[i].id}?fields=id,media_type,media_url,permalink,username,timestamp&access_token=${michaToken}`
             const result = await fetch(url);
             const data = await result.json();
             createElement(data, i);
@@ -39,7 +39,7 @@ async function getPosts(d){
     }
 }
 
-fetchData(`https://graph.instagram.com/me/media?fields=id,caption&access_token=${token}`);
+fetchData(`https://graph.instagram.com/me/media?fields=id,caption&access_token=${michaToken}`);
 
 function createElement(d, i){
     let a = document.createElement('a');
