@@ -2,9 +2,99 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #293229;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 h1{
-    font-size: 5rem;
-    color: crimson;
+    font-size: 3.5rem;
+    color: #FAF1E0;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
 }
+
+
+.ig-img-small img{
+    width: 20rem;
+    height: 20rem;
+    padding: 0.8rem;
+}
+
+.ig-img-big img{
+    width: 40rem;
+    height: 40rem;
+    padding: 0.8rem;
+}
+
+img {
+    object-fit: cover;
+    /* box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.3); */
+    /* border-radius: 0.3rem; */
+    /* padding: 0.5rem; */
+}
+
+#feed{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ig-group{
+    /* padding: 1rem; */
+}
+
+#ig-group-1{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#ig-group-2{
+
+}
+
+#ig-group-3{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#ig-sub-group-3 ,#ig-sub-group-3, #ig-sub-group-3{
+    /* padding: 1rem; */
+}
+
+/* .a{
+    grid-area: 'a';
+}
+
+.b{
+    grid-area: 'b';
+}
+
+.c{
+    grid-area: 'c';
+}
+
+.d{
+    grid-area: 'd';
+}
+
+.e{
+    grid-area: 'e';
+}
+
+.f{
+    grid-area: 'f';
+}
+
+.g{
+    grid-area: 'g';
+}
+
+.h{
+    grid-area: 'h';
+}
+
+.j{
+    grid-area: 'j';
+} */
